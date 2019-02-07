@@ -1,0 +1,78 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jan 21 17:20:28 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.10.44.4) on 18 January 2019 04:21:49
+os: Darwin-18.2.0 Darwin Kernel Version 18.2.0: Mon Nov 12 20:24:46 PST 2018; root:xnu-4903.231.4~2/RELEASE_X86_64
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /Users/mars/PycharmProjects/WinService
+writing pidfile to /Users/mars/PycharmProjects/WinService//uwsgi.pid
+detected binary path: /Users/mars/anaconda3/bin/uwsgi
+chdir() to /Users/mars/PycharmProjects/WinService/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uwsgi socket 1 bound to UNIX address /Users/mars/PycharmProjects/WinService//uwsgi/uwsgi.socket fd 4
+Python version: 3.7.1 (default, Dec 14 2018, 13:28:58)  [Clang 4.0.1 (tags/RELEASE_401/final)]
+Python main interpreter initialized at 0x7fdcc0601460
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416560 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12099)
+spawned uWSGI worker 1 (pid: 12100, cores: 2)
+spawned uWSGI worker 2 (pid: 12101, cores: 2)
+spawned uWSGI worker 3 (pid: 12102, cores: 2)
+spawned uWSGI worker 4 (pid: 12103, cores: 2)
+*** Stats server enabled on /Users/mars/PycharmProjects/WinService//uwsgi/uwsgi.status fd: 16 ***
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jan 21 17:20:32 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.10.44.4) on 18 January 2019 04:21:49
+os: Darwin-18.2.0 Darwin Kernel Version 18.2.0: Mon Nov 12 20:24:46 PST 2018; root:xnu-4903.231.4~2/RELEASE_X86_64
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /Users/mars/PycharmProjects/WinService
+writing pidfile to /Users/mars/PycharmProjects/WinService//uwsgi.pid
+detected binary path: /Users/mars/anaconda3/bin/uwsgi
+chdir() to /Users/mars/PycharmProjects/WinService/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jan 21 17:21:09 2019] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 10.0.0 (clang-1000.10.44.4) on 18 January 2019 04:21:49
+os: Darwin-18.2.0 Darwin Kernel Version 18.2.0: Mon Nov 12 20:24:46 PST 2018; root:xnu-4903.231.4~2/RELEASE_X86_64
+nodename: bogon
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /Users/mars/PycharmProjects/WinService
+writing pidfile to /Users/mars/PycharmProjects/WinService//uwsgi.pid
+detected binary path: /Users/mars/anaconda3/bin/uwsgi
+chdir() to /Users/mars/PycharmProjects/WinService/
+your processes number limit is 1418
+your memory page size is 4096 bytes
+detected max file descriptor number: 256
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+SIGINT/SIGQUIT received...killing workers...
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
