@@ -3,5 +3,5 @@
 
 
 from flask import Blueprint
-Recieves = Blueprint('Recieves', __name__, url_prefix='/recieves/api/v0.1')
+Recieves = Blueprint('Recieves', __name__, url_prefix='/api/v0.1')
 from . import producer

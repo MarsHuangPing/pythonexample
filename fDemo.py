@@ -13,6 +13,9 @@ cameras = []
 from Recieves import Recieves as producers
 app.register_blueprint(producers)
 
+from Sends import Consumers as consumers
+app.register_blueprint(consumers)
+
 
 def convert_row_to_dict(row):
     return {
