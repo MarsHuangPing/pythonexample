@@ -35,7 +35,7 @@ def execute(sql_str):
 
 
 # 插入数据，返回数据主键
-def execute_insert(insert_str, data):
+def execute_insert(insert_str):
     if insert_str is None:
         raise Exception("参数不能为空：sql_str")
     if len(insert_str) == 0:
@@ -43,15 +43,12 @@ def execute_insert(insert_str, data):
     try:
         conn = psycopg2.connect(database=__database, user=__user,
                                 password=__passwd, host=__host, port=__port)
-        cur = conn.cursor()  # 获取一个游标
-        cur.execute(insert_str, data)
-        data = cur.fetchall()
-        # last_id = cur.lastrowid
-        last_id = conn.insert_id()
+        cur = conn.cursor()
+        cur.execute(insert_str)
+
         conn.commit()
-        cur.close()  # 关闭游标
-        conn.close()  # 释放数据库资源
-        return last_id
+        cur.close()
+        conn.close()
     except Exception as e:
         raise e
 
